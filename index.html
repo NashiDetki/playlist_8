@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayListClass</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="conteiner">
+      <div class="cover">
+        <div class="cover__image"></div>
+        <h1 class="cover__heading">Плейлист</h1>
+      </div>
+      <div class="help ">This is playlist</div>
+      <div class="block">
+        <h3 class="block__title">Плейлист</h3>
+        <div class="input">
+          <input 
+            type="text"
+            class="input__text input__text_type-song"
+            placeholder="Название"
+          />
+          <input
+            type="text"
+            class="input__text input__text_type-artist"
+            placeholder="Исполнитель"
+          />
+          <button class="form__submit-btn form__submit-btn_action_add">
+            Добавить
+          </button>
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="block__title">Добавленные</h3>
+        <div class="no-songs">
+          <p class="no-songs__text">Нет добавленных песен</p>
+        </div>
+        <div class="songs-conteiner">
+          <!-- <div class="song">
+              <h4 class="song__artist">Кино</h4>
+              <p class="song_title">Кукушка</p>
+              <button class="song__like"></button>
+            </div> -->
+        </div>
+        <div class="form__submit">
+          <button class="form__submit-btn form__submit-btn_action_reset">
+            Очистить плейлист
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <template id="song-templete">
+      <div class="song">
+        <h4 class="song__artist">Кино</h4>
+        <p class="song_title">Кукушка</p>
+        <button class="song__like"></button>
+      </div>
+    </template>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

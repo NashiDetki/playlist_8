@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input,
+button {
+  border: none;
+}
+
+.conteiner {
+  margin: auto;
+  max-width: 468px;
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cover__image {
+  background-image: url(./image/music.jpg);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover__heading {
+  margin: 0;
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+.block {
+    margin-top: 60px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input__text {
+  width: 150px;
+  height: 50px;
+  border-bottom: 1px solid #f1f1f1;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.form__submit-btn {
+  width: 150px;
+  height: 50px;
+  background-color: #ffdb4d;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.no-songs{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no_songs_hidden{
+  display: none;
+}
+
+.no-songs__text{
+    color: #e4dfdf;
+}
+
+.form__submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__submit-btn_disabled{
+  cursor: default;
+  background-color: #f1f1f1;
+}
+
+.song{
+  display: flex;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  font-size: 14px;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.song__artist{
+  margin-right: 10px;
+}
+
+.song__like{
+  background: url(./image/heart.svg) center no-repeat;
+  background-size: 100%;
+  width: 15px;
+  height: 15px;
+  border: none;
+  position: absolute;
+  right: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.song__like_active{
+  background: url(/image/heart-filled.svg) center no-repeat;
+  opacity: 1;
+}
+
+
+.help{
+  display:none
+}
